@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -328,8 +332,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       libsodium-wrappers:
-        specifier: ^0.7.11
-        version: 0.7.11
+        specifier: ^0.8.0
+        version: 0.8.4
       secure-json-parse:
         specifier: ^2.7.0
         version: 2.7.0
@@ -344,8 +348,8 @@ importers:
         specifier: workspace:*
         version: link:../../config/tsconfig
       '@types/libsodium-wrappers':
-        specifier: ^0.7.10
-        version: 0.7.10
+        specifier: ^0.8.0
+        version: 0.8.2
       '@types/node':
         specifier: ^18.15.5
         version: 18.15.5
@@ -4424,6 +4428,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -6707,8 +6712,11 @@ packages:
     dependencies:
       '@types/node': 18.16.16
 
-  /@types/libsodium-wrappers@0.7.10:
-    resolution: {integrity: sha512-BqI9B92u+cM3ccp8mpHf+HzJ8fBlRwdmyd6+fz3p99m3V6ifT5O3zmOMi612PGkpeFeG/G6loxUnzlDNhfjPSA==}
+  /@types/libsodium-wrappers@0.8.2:
+    resolution: {integrity: sha512-+2IDfSULPUskSjIYfZl9suIUsIE5PXwoKZiE/j0MZWd+M9nEGvJDsk/ztMZKNhL1lBL+1CaypW0dQSjqPW2dMg==}
+    deprecated: This is a stub types definition. libsodium-wrappers provides its own type definitions, so you do not need this installed.
+    dependencies:
+      libsodium-wrappers: 0.8.4
     dev: true
 
   /@types/lodash.mergewith@4.6.7:
@@ -13221,8 +13229,16 @@ packages:
     dependencies:
       libsodium: 0.7.11
 
+  /libsodium-wrappers@0.8.4:
+    resolution: {integrity: sha512-mu8aAWucZjTB5O/BtGXtW4e1agy7uHxNYG7zPthmmD1jU43LCDmSWZLN4JhflbdPXj3yDO4lxM1O9hLDgIOXDw==}
+    dependencies:
+      libsodium: 0.8.4
+
   /libsodium@0.7.11:
     resolution: {integrity: sha512-WPfJ7sS53I2s4iM58QxY3Inb83/6mjlYgcmZs7DJsvDlnmVUwNinBCi5vBT43P6bHRy01O4zsMU2CoVR6xJ40A==}
+
+  /libsodium@0.8.4:
+    resolution: {integrity: sha512-lMcYaRi0zcs7tarATsQUYC7rstliIXZuoq0c6zXSgNtSNtdvBgkSegjWhpMJAXzKX3SUSwIp7+zEsob+j3LuRw==}
 
   /light-my-request@5.9.1:
     resolution: {integrity: sha512-UT7pUk8jNCR1wR7w3iWfIjx32DiB2f3hFdQSOwy3/EPQ3n3VocyipUxcyRZR0ahoev+fky69uA+GejPa9KuHKg==}
