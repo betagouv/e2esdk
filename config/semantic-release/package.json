@@ -37,7 +37,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "zod": "^3.21.4"
+    "zod": "^4.0.0"
   },
   "devDependencies": {
     "@socialgouv/e2esdk-config-typescript": "workspace:*",
